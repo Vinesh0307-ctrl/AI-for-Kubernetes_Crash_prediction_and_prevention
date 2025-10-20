@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crash-predictor
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: crash-predictor
+  template:
+    metadata:
+      labels:
+        app: crash-predictor
+    spec:
+      containers:
+        - name: crash-predictor
+          image: crash-predictor:latest
+          imagePullPolicy: Never # <-- important to use local image
+          ports:
+            - containerPort: 8000
