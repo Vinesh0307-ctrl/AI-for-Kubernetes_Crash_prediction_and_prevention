@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+venv/
+env/
+*.egg-info/
+
+# Jupyter / IPython
+.ipynb_checkpoints
+
+# Logs
+*.log
+
+# ML models and data
+*.pkl
+*.h5
+*.pt
+data/
+
+# Docker
+*.dockerignore
+Dockerfile
+docker-compose.override.yml
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
